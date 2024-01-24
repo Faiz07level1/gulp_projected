@@ -1,0 +1,294 @@
+@media (max-width: 1500px) {
+    .promo {
+        min-height: 600px;
+        padding: 30px 0 80px 0;
+    }
+        
+}
+
+@media (max-width: 1200px) {
+    .promo {
+        min-height: 550px;
+        padding: 40px 0 70px 0;
+        &__header {
+            font-size: 34px;
+        }
+        &__subheader {
+            font-size: 17px;
+        }
+        &__icons {
+            margin-top: 40px;
+        }
+    }
+    .consultation {
+        min-height: 535px;
+
+    }
+        
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 0 7px;
+    }
+    .promo {
+        min-height: 480px;
+        padding: 30px 0;
+        padding-bottom: 40px;
+        width: 100%;
+        &__wrapper {
+            padding-right: 15px;
+            margin-top: 45px;
+        }
+        &__header {
+            font-size: 30px;
+        }
+        &__subheader {
+            font-size: 15px;
+        }
+        &__icons {
+            margin-top: 30px;
+            width: 400px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        
+    }
+    
+    .button {
+        width: 260px;
+        font-size: 15px;
+        &_main {
+            height: 42px;
+            margin-top: 50px;
+        }
+        &_submit {
+            height: 50px;
+        }
+    }
+    .substrate {
+        &__icons {
+            justify-content: space-between;
+
+        }
+        &__icon {
+            font-size: 13px;
+        }
+        &__text {
+            font-size: 15px;
+        }
+    }
+    .title {
+        font-size: 29px;
+        &_left {
+            font-size: 27px;
+        }
+    }
+    .consultation {
+        min-height: 500px;
+        padding-left: 10px;
+    }
+    .feed-form {
+        input {
+            height: 50px;
+        }
+    }
+
+}
+@media ( max-width: 767px ) {
+    .header {
+        padding: 0 7px;
+        &__logo {
+            width: 220px;
+        }
+        &__official {
+            font-size: 11px;
+            span {
+                font-size: 16px;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+        }
+            
+        
+    }
+    .promo {
+        min-height: 435px;
+        padding: 25px 0;
+        width: 100%;
+        &__wrapper {
+            padding-right: 15px;
+        }
+        &__header {
+            font-size: 25px;
+        }
+        &__subheader {
+            font-size: 13px;
+        }
+        &__icons {
+            margin-top: 22px;
+            width: 370px;
+        }
+        &_link {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+    }
+    .button {
+        width: 210px;
+        font-size: 13px;
+        height: 28px;
+        &_submit {
+            height: 35px;
+        }
+    }
+    .substrate {
+        &__icons {
+            flex-direction: column;
+        }
+        &__icon {
+            font-size: 25px;
+            img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+        &__text {
+            font-size: 20px;
+            width: 365px;
+            margin-bottom: 40px;
+        }
+        
+    }
+    .consultation {
+        padding: 85px 0 90px 10px;
+        min-height: 462px;
+        &__descr {
+            font-size: 18px;
+        }
+    }
+    .feed-form {
+        input {
+            height: 45px;
+        }
+    }
+    .title {
+        &_left {
+            font-size: 23px;
+        }
+    }
+}  
+@media (max-width: 575px) {
+    .header {
+        &__logo {
+            width: 180px;
+        }
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 14px;
+            }
+        }
+        &__phone {
+            font-size: 13px;
+        }
+            
+        
+    }
+    .promo {
+        min-height: 350px;
+        padding: 25px 0;
+        width: 100%;
+        &__wrapper {
+            padding-right: 15px;
+            margin-top: 20px;
+        }
+        &__header {
+            font-size: 18px;
+        }
+        &__subheader {
+            font-size: 9px;
+        }
+        &__icons {
+            margin-top: 22px;
+            width: 310px;
+        }
+        &_link {
+            font-size: 10px;
+            margin-top: 9px;
+        }
+        &__icon {
+            width: 95px;
+            font-size: 12px;
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+    }
+    .button {
+        width: 170px;
+        font-size: 11px;
+        height: 24px;
+        &_main {
+            font-size: 10px;
+            height: 30px;
+        }
+    }
+    .substrate {
+        padding-top: 50px;
+        &__icon {
+            font-size: 20px;
+            img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+        &__text {
+            font-size: 14px;
+            width: 300px;
+            margin-bottom: 40px;
+        }
+        
+    }
+    .title {
+        &_left {
+            font-size: 18px;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+    .consultation {
+        padding: 60px 0 60px 10px;
+        min-height: 390px;
+        &__descr {
+            font-size: 15px;
+            text-align: center;
+            line-height: 25px;
+        }
+    }
+    .feed-form {
+        margin: 25px auto 0 auto;
+        max-width: 235px;
+        
+        input {
+            height: 40px;
+        }
+    }
+    .button {
+        &_submit {
+            margin: 0 auto;
+            height: 32px;
+        }
+    }
+} 
+
+
+
+
+

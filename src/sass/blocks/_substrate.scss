@@ -1,0 +1,44 @@
+.substrate {
+    min-height: 473px;
+    padding: 73px 0 65px 0;
+    
+    
+        
+    
+    &__all {
+        display: flex;
+        flex-direction: column;
+    }
+    &__icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #0D0D0D;
+        text-align: center;
+        font-family: MuseoModerno;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        img {
+            display: block;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        width: 273px;
+        color: #0D0D0D;
+        text-align: center;
+        font-family: MuseoModerno;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+    }
+    
+}
