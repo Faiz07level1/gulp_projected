@@ -66,9 +66,9 @@
             padding-top: 16px;
         }
         &__back {
+            bottom: 0;
             position: absolute;
             left: 85px;
-            bottom: -17px;
             color: $main-color;
             font-family: MuseoModerno;
             font-size: 14px;
@@ -77,18 +77,27 @@
             line-height: 14px;
             text-transform: uppercase;
         }
-        &__list {
+        &__secondwrap {
             position: relative;
             width: 50%;
-            margin-left: 20px;
-            transform: translateX(0%);
+            
             transition: 0.5s all;
             padding-right: 20px;
             position: relative;
             padding-left: 0px;
             padding-bottom: 0;
             margin-top: 0;
+            &_active {
+                transform: translateX(-100%); 
+                margin-left: 0px;
+            }
+        }
+        &__list {
+            margin-left: 10px;
             list-style-type: none;
+            transform: translateX(0%);
+            transition: 0.5s all;
+            padding-left: 0;
             li {
                 margin-bottom: 4px;
                 // list-style-type: square;

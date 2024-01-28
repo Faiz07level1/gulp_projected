@@ -10,4 +10,14 @@
         font-weight: 500;
         line-height: 30px;
     }
+    .error {
+        border: 2px solid $main-color;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 15px;
+        font-size: 12px;
+    } 
 }

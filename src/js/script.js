@@ -31,7 +31,7 @@ $(document).ready(function(){
                 $(this).on('click', function(e) {
                     e.preventDefault();
                     $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-                    $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+                    $('.catalog-item__secondwrap').eq(i).toggleClass('catalog-item__secondwrap_active');
                 })
             });
         };
@@ -52,6 +52,85 @@ $(document).ready(function(){
         $(".overlay, #order").fadeToggle()
       })
     })
+    //Forms
+
+    function validateForm(form) {
+      $(form).validate({
+        rules: {
+          name: "required",
+          phone: "required",
+          email: {
+            required: true,
+            email: true
+          },
+        },  
+          messages: {
+            name: "Пожалуйста введите имя",
+            phone: "Пожалуйста введите cвой телефон",
+            email: {
+              required: "Пожалуйста введите email адрес",
+              email: "Введите правильный email адрес",
+            },
+          },
+        
+      });
+    }
+
+    validateForm("#consultation-form")
+    validateForm("#consultation form")
+    validateForm("#order form")
+
+    //Mask
+    $("input[name=phone]").mask("+(999) 999-999-999");
+    //Send-Form
+    $('form').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+          type: "POST",
+          url: "mailer/smart.php",
+          data: $(this).serialize()
+      }).done(function() {
+          $(this).find("input").val("");
+          $('#consultation, #order').fadeOut();
+          $('.overlay, #thanks').fadeIn('slow');
+
+          $('form').trigger('reset');
+      });
+      return false;
+  });
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+      $(".pageup").fadeIn()
+    } else {
+      $(".pageup").fadeOut()
+    }
+
+    
+  })
+
+  // $("a[href]")
+
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      if (this.hash !== "") {
+
+        event.preventDefault();
+  
+        // Store hash
+        let hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+
+  new WOW().init();
   });
 
 

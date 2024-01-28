@@ -1,7 +1,7 @@
 .substrate {
     min-height: 473px;
     padding: 73px 0 65px 0;
-    
+    background-color: #fbf7f7;
     
         
     
@@ -39,6 +39,15 @@
         font-style: normal;
         font-weight: 300;
         line-height: 18px;
+    }
+    &__heart {
+        &_animated {
+            animation: heartbeat ease 1.5s infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+            
+        }
     }
     
 }
